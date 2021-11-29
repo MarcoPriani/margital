@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden; }
+
+textarea {
+  resize: none; }
+
+/*=================Desafio 2 mixin=================*/
+h2 {
+  color: #3D2C8D;
+  font-size: 60px; }
+
+h3 {
+  color: #5C7AEA;
+  font-size: 100px; }
+
+/*===================MENU==========================*/
+#menu button {
+  font-size: 18px !important;
+  font-weight: 600; }
+  #menu button a {
+    color: #3f3f3f; }
+
+/*===================SLIDER DE IMAGENES==========================*/
+.carousel-inner {
+  max-height: 39rem !important; }
+
+/*=========================FOOTER================================*/
+footer {
+  background: #1b2a4e;
+  min-height: 100px; }
+  footer p {
+    color: #f3f3f3;
+    text-align: center; }
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3; }
+
+/*=========================Portafolio================================*/
+.portafolio-item {
+  width: 30%;
+  position: relative;
+  overflow: hidden; }
+
+.portafolio-img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.portafolio-text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.portafolio-text p {
+  text-align: justify; }
+
+.portafolio-item:hover .portafolio-text {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%); }
+
+.portafolio-item:hover .portafolio-img {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15); }
+
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px) {
+  #servicios-fila-2 {
+    width: 100% !important; }
+  #servicios-fila-1 {
+    width: 100% !important; }
+  .icono-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center; } }
